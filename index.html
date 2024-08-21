@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calculator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="display">
+          <input type="text" readonly />
+        </div>
+        <div class="btn">
+          <button onclick="clearAll()">AC</button>
+          <button onclick="del()">DE</button>
+          <button onclick="Display('%')"><i class="fa-solid fa-percent"></i></button>
+          <button onclick="Display('/')"><i class="fa-solid fa-divide"></i></button>
+          <button onclick="Display('7')">7</button>
+          <button onclick="Display('8')">8</button>
+          <button onclick="Display('9')">9</button>
+          <button onclick="Display('*')"><i class="fa-solid fa-xmark"></i></button>
+          <button onclick="Display('4')">4</button>
+          <button onclick="Display('5')">5</button>
+          <button onclick="Display('6')">6</button>
+          <button onclick="Display('-')"><i class="fa-solid fa-minus"></i></button>
+          <button onclick="Display('1')">1</button>
+          <button onclick="Display('2')">2</button>
+          <button onclick="Display('3')">3</button>
+          <button onclick="Display('+')"><i class="fa-solid fa-plus"></i></button>
+          <button onclick="Display('00')">00</button>
+          <button onclick="Display('0')">0</button>
+          <button onclick="Display('.')">.</button>
+          <button onclick="calculate()"><i class="fa-solid fa-equals"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>
